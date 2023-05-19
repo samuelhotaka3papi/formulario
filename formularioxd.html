@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULARIOS EN HTML</title>
+</head>
+<body>
+  <form>
+     <fieldset>
+      <legend>DATOS PERSONALES</legend>
+      <label>Nombres y apellidos</label>
+      <input name='nombre' type="text"/><br>
+      <label>Sexo: </label>
+      <select name="select">
+             <option value="value1">hombre</option>
+             <option value="value2">mujer</option>
+             <option value="value3">no binario</option>
+      </select><br><br>
+      <label>Edad: </label>
+      <input type='checkbox' name='edad' value='10-19' /> 10-19
+      <input type='checkbox' name='edad' value='20-39' /> 20-39
+      <input type='checkbox' name='edad' value='40-59' /> 40-59<br><br>
+      <label>Email: </label>
+      <input name='nombre' type='email'/><br><br>
+      <label>Estudios: </label>
+      <select id="dino-select">
+      <optgroup label="Estudios universitarios">
+               <option>Doctorado</option>
+               <option>Master</option>
+               <option>Grado</option>
+      </optgroup>
+      <optgroup label="Ciclo Formativo">
+               <option>Grado Superior</option>
+               <option>Grado Medio</option>
+      </optgroup>
+      </select><br><br>
+      <label>Elije tu navegador favorito: </label>
+      <input list="browsers" name="mybrowser"/>
+      <datalist id="browsers">
+              <option value="chrome">
+              <option value="firefox">
+              <option value="opera">
+              <option value="safari">
+              <option value="microsoft edge">
+      </datalist><br><br>
+       <textarea name="textarea" rows="10" cols="50" placeholder="Escribe aqui un mensaje"></textarea>
+     </fieldset>
+       <input type="submit" value="Enviar" />
+  </form>
+</body>
+</html>
+     
+ 
+    
